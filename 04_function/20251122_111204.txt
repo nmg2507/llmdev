@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge" http-equiv="X-UA-Compatible" /><script>
+  (function() {
+    var gtm_user_id = window.localStorage.getItem('gtm_user_id');
+    if (gtm_user_id) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'user_id': gtm_user_id
+      });
+    }
+  })();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});va
