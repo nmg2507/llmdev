@@ -1,0 +1,15 @@
+/* headerクラスを水色背景・白文字に */
+.header {
+    background-color: #84ceef;
+    color: #fff;
+}
+/* h1を赤文字中央寄せに */
+h1 {
+    color: #e47292;
+    text-align: center
+}
+/* footerクラスを黒背景・白文字に */
+.footer {
+    background-color: #000000;
+    color: #fff;
+}
