@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Top Page</title>
+</head>
+
+<body>  <!-- 条件によって、分岐させる -->
+    {% if name == "Alice" %}
+        <h1>Welcome back, Alice!</h1>
+    {% else %}
+        <h1>Hello, {{ name }}★</h1>
+    {% endif %}
+</body>
+</html>

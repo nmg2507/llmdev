@@ -1,0 +1,29 @@
+<!-- Flaskが利用している、Jinja2=テンプレートエンジン　
+ 　の構文でかく　-->
+
+{% extends "base.html" %}
+
+{% set title_content = "My WebSite" %}
+
+{% block title %}ユーザー登録{% endblock %}
+
+
+<!-- /submit というURLにデータを送信することを示 -->
+
+{% block content %}
+    <form action="/submit" method="post"> 
+         <!-- 以下、入力ボックスと引き渡し先の代数指定を作成 -->
+         <!-- required　とすることで、空送信を防ぐ -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- タイプをemailにするとemailバリデーションされる -->
+
+        <input type="submit" value="Submit">
+        <!-- 送信ボタンがつくられる　-->
+    </form>
+{% endblock %}
+
+<!-- Flask側で、受け取るコードをつくっておく！(app.py)　-->
